@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(black, grey);
+  color: black;
+  font-family: Helvetica;
+}
+
+h1 {
+  color: white;
+
+  span {
+    color: #5c96cd;
+  }
+}
+
+fieldset {
+  height: 100%;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+
+  legend {
+    background: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media all and (min-width: 769px) {
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  fieldset {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  fieldset {
+    text-align: center;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.step1 {
+  background-color: #a4e0bc;
+}
+
+.step2 {
+  background-color: #bcdeec;
+}
+
+.step3 {
+  background-color: #e9cdb6;
+}
+
+.icon-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.fa-check-circle {
+  font-size: 80px;
+  margin-top: 30px;
+  color: #ccfbc0;
+  background-color: green;
+  border-radius: 50%;
+}
+
+label {
+  font-style: italic;
+}
+
+p {
+  font-style: italic;
+}
+
+select {
+  margin: 5px;
+}
+
+input {
+  margin: 5px;
+}
+
+@media all and (min-width: 769px) {
+  .label-textarea-wrap {
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .label-textarea-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+textarea {
+  margin-top: 10px;
+}
